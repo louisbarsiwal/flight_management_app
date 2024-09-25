@@ -1,4 +1,4 @@
-package flightmanagement.app.FlightApp;
+package flightmanagement.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
