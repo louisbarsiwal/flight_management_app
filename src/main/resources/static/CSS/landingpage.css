@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.left-nav {
+    background-color: #f0f0f0;
+    padding: 1em;
+    position: fixed;
+    top: 60px; /* adjust this value based on the height of your top nav bar */
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 60px); /* adjust this value based on the height of your top nav bar */
+    overflow-y: auto;
+}
+
+.left-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-nav li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-nav a:hover {
+    background-color: #ccc;
+}
+
+.main-content {
+    margin-left: 200px; /* adjust this value based on the width of your left nav bar */
+    padding: 1em;
+}
