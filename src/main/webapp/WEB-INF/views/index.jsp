@@ -67,7 +67,7 @@
         <option value="return">Return</option>
       </select>
 
-      <input type="date" name="departureDate" required>
+      <input type="date" name="departureDate" id="departureDate" required>
       <input type="date" name="returnDate" id="returnDate" style="display:none;">
 
       <input type="number" name="passengers" min="1" value="1" placeholder="Adults" required>
@@ -108,6 +108,14 @@ function toggleReturnDate() {
     returnDate.style.display = "none";
   }
 }
+
+function setMinDate() {
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementById("departureDate").setAttribute('min', today);
+  document.getElementById("returnDate").setAttribute('min', today);
+}
+
+window.onload = setMinDate;
 
 window.onclick = function(event) {
   if (!event.target.matches('.profile-icon img')) {
