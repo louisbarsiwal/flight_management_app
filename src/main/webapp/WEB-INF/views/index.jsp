@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-	<h1>MCQ Application</h1>
+	<h1>Flight  Application</h1>
 	
 	
 			
