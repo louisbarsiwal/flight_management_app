@@ -6,16 +6,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
-<<<<<<< HEAD
 	<h1>Flight  Application</h1>
-	
-	
-			
-			
-			
-			
-=======
-
 <div class="header" id="header">
   <button class="openbtn" onclick="openNav()">☰</button>
   <span id="companyName">XYZ FLIGHTS</span>
@@ -122,7 +113,5 @@ window.onclick = function(event) {
   }
 }
 </script>
-
->>>>>>> 7848b2e6b7732984a37c48412a5010a2dbcf3f46
 </body>
 </html>
