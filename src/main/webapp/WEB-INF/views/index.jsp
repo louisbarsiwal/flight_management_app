@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MCQ Application</title>
+<title>Flight Management System</title>
 <style>
 	h1, p {text-align: center;}
 </style>
 </head>
 <body>
-	<h1>MCQ Application</h1>
+	<h1>Flight Management System</h1>
 	
 	
 			
