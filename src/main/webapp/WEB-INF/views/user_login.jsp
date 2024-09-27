@@ -49,11 +49,11 @@
 </head>
 <body>
 
-    <form action="/user/login" method="post">
+    <form action="/businessOwner_Registration/login" method="post">
         <input type="text" name="username" placeholder="Username" required /><br/>
         <input type="password" name="password" placeholder="Password" required /><br/>
         <input type="submit" value="Submit" /><br/>
-		<p><a href="/user/openRegistrationPage">Don't have an account? Register here</a></p>
+		<p><a href="/businessOwner_Registration/openRegistrationPage">Don't have an account? Register here</a></p>
     </form>
     
   
