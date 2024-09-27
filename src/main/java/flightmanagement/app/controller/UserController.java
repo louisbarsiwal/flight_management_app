@@ -10,7 +10,6 @@ public class UserController
 {
 	
 	
-	// @RequestMapping(value = "/openLoginPage", method = RequestMethod.GET)
 	@GetMapping("/openLoginPage")
 	public String openLoginPage() {
 		return "user_login";
