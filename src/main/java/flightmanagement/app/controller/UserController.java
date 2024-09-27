@@ -21,7 +21,5 @@ public class UserController
 		return "user_registration";
 	}
 	
-	
-	
 
 }
