@@ -19,8 +19,21 @@ public class UserController
 	public String openRegistrationPage() {
 		return "user_registration";
 	}
-	
-	
-	
+	@GetMapping("/openUserProfilePage")
+	public String userprofile() {
+		return "userprofile";
+	}
+	@GetMapping("/openUserEditProfilePage")
+	public String usereditprofile() {
+		return "user_editprofile";
+	}
+	@GetMapping("/openFM_loginPage")
+	public String FMloginpage() {
+		return "FM_login";
+	}
+	@GetMapping("/openFM_registrationPage")
+	public String FMregistrationpage() {
+		return "FM_registration";
+	}
 
 }

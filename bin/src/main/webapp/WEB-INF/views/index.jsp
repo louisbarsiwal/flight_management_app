@@ -14,8 +14,8 @@
     <img src="images/profile-icon.png" alt="Profile Icon">
     <div id="dropdown" class="dropdown-content">
       <a href="/user/openLoginPage">Business Owner</a>
-      <a href="/user/openFM_loginPage">Flight Manager</a>
-      <a href="#">Customer</a>
+      <a href="#flightManager">Flight Manager</a>
+      <a href="#customer">Customer</a>
     </div>
   </div>
 </div>
