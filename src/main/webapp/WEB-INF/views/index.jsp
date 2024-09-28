@@ -7,13 +7,14 @@
 </head>
 <body>
 
+<div class="content">
 <div class="header" id="header">
   <button class="openbtn" onclick="openNav()">☰</button>
   <span id="companyName">XYZ FLIGHTS</span>
   <div class="profile-icon" onclick="toggleDropdown()">
     <img src="images/profile-icon.png" alt="Profile Icon">
     <div id="dropdown" class="dropdown-content">
-      <a href="/user/openLoginPage">Business Owner</a>
+      <a href="/businessOwner_Registration/openLoginPage">Business Owner</a>
       <a href="#flightManager">Flight Manager</a>
       <a href="#customer">Customer</a>
     </div>
@@ -65,6 +66,7 @@
     </form>
   </div>
 </div>
+</div>
 
 <script>
 function openNav() {
@@ -88,10 +90,18 @@ function toggleReturnDate() {
   var returnDate = document.getElementById("returnDate");
   if (tripType === "return") {
     returnDate.style.display = "inline-block";
+    setReturnMinDate();
   } else {
     returnDate.style.display = "none";
   }
 }
+
+function setReturnMinDate() {
+  var departureDateValue = document.getElementById("departureDate").value;
+  document.getElementById("returnDate").setAttribute('min', departureDateValue);
+}
+
+document.getElementById("departureDate").addEventListener('change', setReturnMinDate);
 
 function setMinDate() {
   var today = new Date().toISOString().split('T')[0];

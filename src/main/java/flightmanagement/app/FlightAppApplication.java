@@ -10,5 +10,5 @@ public class FlightAppApplication {
 		SpringApplication.run(FlightAppApplication.class, args);
 	}
 	
- //yse
+
 }

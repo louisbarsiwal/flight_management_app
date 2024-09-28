@@ -3,9 +3,32 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  
-
+  position: relative;
+  overflow: hidden; /* Ensure no overflow */
 }
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust the blur as needed */
+  z-index: -1; /* Place it behind the content */
+}
+
+.content {
+  position: relative; /* Ensure content is above the background */
+  z-index: 1; /* Place content above the blurred background */
+  padding: 20px;
+  color: white; /* Adjust text color for visibility */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: add a shadow for better readability */
+}
+
 
 .header, .sidebar, .booking-form {
   position: relative;
@@ -13,11 +36,12 @@ body {
 }
 
 .header {
-  background-color: rgb(98 86 86); /* Semi-transparent background */
+  background-color: rgb(98, 86, 86); /* Semi-transparent background */
   padding: 20px;
   text-align: left;
   font-size: 25px;
   transition: margin-left 0.3s;
+  border-radius: 10px; 
 }
 
 .openbtn {
