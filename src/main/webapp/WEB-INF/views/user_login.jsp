@@ -9,13 +9,14 @@
 </head>
 <body>
 
-    <form action="/user/login" method="post">
-        <img src="/images/profile-icon.png" alt="Profile Icon" class="profile-icon" />
+    <form action="/businessOwner_Registration/login" method="post">
+		<img src="/images/profile-icon.png" alt="Profile Icon" class="profile-icon" />
         <input type="text" name="username" placeholder="Username" required /><br/>
         <input type="password" name="password" placeholder="Password" required /><br/>
-        <button type="submit">Submit</button><br/>
-        <p><a href="/user/openRegistrationPage">Don't have an account? Register here</a></p>
+        <input type="submit" value="Submit" /><br/>
+		<p><a href="/businessOwner_Registration/openRegistrationPage">Don't have an account? Register here</a></p>
     </form>
+	
 
 </body>
 </html>
