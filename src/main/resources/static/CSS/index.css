@@ -1,10 +1,24 @@
+/* Add this to your existing CSS file */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-image: url('../images/background.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+.header, .sidebar, .booking-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: to make content readable over background */
+}
+
+#main {
+  padding: 20px;
+}
+
+.sidebar a {
+  color: #000; /* Ensure links are visible */
 }
 
 .header, .sidebar, .booking-form {
@@ -110,7 +124,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  margin-top: 90px;
+  height: 40vh;
   position: relative;
   z-index: 1;
 }

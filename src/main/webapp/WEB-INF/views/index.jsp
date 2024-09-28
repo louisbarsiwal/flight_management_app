@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
-	<h1>Flight  Application</h1>
+	<!--h1>Flight  Application</h1-->
 <div class="header" id="header">
   <button class="openbtn" onclick="openNav()">☰</button>
   <span id="companyName">XYZ FLIGHTS</span>

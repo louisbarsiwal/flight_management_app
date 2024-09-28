@@ -19,6 +19,10 @@ public class UserController
 	public String openRegistrationPage() {
 		return "user_registration";
 	}
-	
+	@GetMapping("/openFlightPage")
+	public String openFlightPage()
+	{
+		return "Flight";
+	}
 
 }
