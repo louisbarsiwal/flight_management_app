@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
+<<<<<<< HEAD
 
 <div class="content">
 <div class="header" id="header">
@@ -17,6 +18,18 @@
       <a href="/businessOwner_Registration/openLoginPage">Business Owner</a>
       <a href="#flightManager">Flight Manager</a>
       <a href="#customer">Customer</a>
+=======
+	<!--h1>Flight  Application</h1-->
+<div class="header" id="header">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <span id="companyName">XYZ FLIGHTS</span>
+   <div class="profile-icon" onclick="toggleDropdown()">
+     <img src="images/profile-icon.png" alt="Profile Icon">
+     <div id="dropdown" class="dropdown-content">
+       <a href="/user/openLoginPage">Business Owner</a>
+       <a href="/user/openFlightPage">Flight Manager</a>
+       <a href="#customer">Customer</a>
+>>>>>>> 873f393a1167b0522abd0a11102780737a321b26
     </div>
   </div>
 </div>
@@ -122,7 +135,7 @@ window.onclick = function(event) {
     }
   }
 }
-</script>
 
+</script>
 </body>
 </html>

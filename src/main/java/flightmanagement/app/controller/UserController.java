@@ -45,6 +45,7 @@ public class UserController
 		modelAndView.setViewName("user_registration");
 		return modelAndView;
 	}
+<<<<<<< HEAD
 	
 	
 //	@PostMapping("/login")
@@ -107,5 +108,12 @@ public class UserController
 
 	
 	
+=======
+	@GetMapping("/openFlightPage")
+	public String openFlightPage()
+	{
+		return "Flight";
+	}
+>>>>>>> 873f393a1167b0522abd0a11102780737a321b26
 
 }
