@@ -6,7 +6,9 @@
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 </head>
 <body>
+<<<<<<< HEAD
 
+<div class="content">
 <div class="header" id="header">
   <button class="openbtn" onclick="openNav()">☰</button>
   <span id="companyName">XYZ FLIGHTS</span>
@@ -16,6 +18,18 @@
       <a href="/businessOwner_Registration/openLoginPage">Business Owner</a>
       <a href="#flightManager">Flight Manager</a>
       <a href="#customer">Customer</a>
+=======
+	<!--h1>Flight  Application</h1-->
+<div class="header" id="header">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  <span id="companyName">XYZ FLIGHTS</span>
+   <div class="profile-icon" onclick="toggleDropdown()">
+     <img src="images/profile-icon.png" alt="Profile Icon">
+     <div id="dropdown" class="dropdown-content">
+       <a href="/user/openLoginPage">Business Owner</a>
+       <a href="/user/openFlightPage">Flight Manager</a>
+       <a href="#customer">Customer</a>
+>>>>>>> 873f393a1167b0522abd0a11102780737a321b26
     </div>
   </div>
 </div>
@@ -65,6 +79,7 @@
     </form>
   </div>
 </div>
+</div>
 
 <script>
 function openNav() {
@@ -88,10 +103,18 @@ function toggleReturnDate() {
   var returnDate = document.getElementById("returnDate");
   if (tripType === "return") {
     returnDate.style.display = "inline-block";
+    setReturnMinDate();
   } else {
     returnDate.style.display = "none";
   }
 }
+
+function setReturnMinDate() {
+  var departureDateValue = document.getElementById("departureDate").value;
+  document.getElementById("returnDate").setAttribute('min', departureDateValue);
+}
+
+document.getElementById("departureDate").addEventListener('change', setReturnMinDate);
 
 function setMinDate() {
   var today = new Date().toISOString().split('T')[0];
@@ -112,7 +135,7 @@ window.onclick = function(event) {
     }
   }
 }
-</script>
 
+</script>
 </body>
 </html>

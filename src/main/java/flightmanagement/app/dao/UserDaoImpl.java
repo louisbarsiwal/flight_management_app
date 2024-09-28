@@ -34,13 +34,20 @@ public class UserDaoImpl implements UserDao {
 			throws IOException, SerialException, SQLException {
 		Blob profileImage = getBlob(businessOwnerRegistration.getProfileImage());
 
-		String query = "INSERT INTO admin_businessowner " + "(`first_name`, `last_name`, `email_id`, `mobile_no`, "
+		String query = "INSERT INTO businessowner " + "(`first_name`, `last_name`, `email_id`, `mobile_no`, "
 				+ "`date_of_birth`, `username`, `password_salt`, `password_hash`, "
 				+ "`profile_image`) " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-		return jdbcTemplate.update(query, businessOwnerRegistration.getFirstName(), businessOwnerRegistration.getLastName(), businessOwnerRegistration.getEmailId(),
-				businessOwnerRegistration.getMobileNo(), businessOwnerRegistration.getDateOfBirth(), businessOwnerRegistration.getUsername(), businessOwnerRegistration.getPasswordSalt(),
-				businessOwnerRegistration.getPasswordHash(), profileImage);
+		return jdbcTemplate.update(query, 
+				businessOwnerRegistration.getFirstName(), 
+				businessOwnerRegistration.getLastName(), 
+				businessOwnerRegistration.getEmailId(),
+				businessOwnerRegistration.getMobileNo(), 
+				businessOwnerRegistration.getDateOfBirth(), 
+				businessOwnerRegistration.getUsername(), 
+				businessOwnerRegistration.getPasswordSalt(),
+				businessOwnerRegistration.getPasswordHash(), 
+				profileImage);
 	}
 		
 		private Blob getBlob(MultipartFile image) throws IOException, SerialException, SQLException {
