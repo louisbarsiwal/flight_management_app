@@ -22,6 +22,7 @@
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#addFlight">USER PROFILE</a>
   <a href="#addFlight">ADD FLIGHT</a>
   <a href="#deleteFlight">DELETE FLIGHT</a>
   <a href="#addAirline">ADD AIRLINE</a>
