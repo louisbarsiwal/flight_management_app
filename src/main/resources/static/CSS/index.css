@@ -5,6 +5,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+<<<<<<< HEAD
+  position: relative;
+  overflow: hidden; /* Ensure no overflow */
+=======
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -19,7 +23,31 @@ body {
 
 .sidebar a {
   color: #000; /* Ensure links are visible */
+>>>>>>> 873f393a1167b0522abd0a11102780737a321b26
 }
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adjust the blur as needed */
+  z-index: -1; /* Place it behind the content */
+}
+
+.content {
+  position: relative; /* Ensure content is above the background */
+  z-index: 1; /* Place content above the blurred background */
+  padding: 20px;
+  color: white; /* Adjust text color for visibility */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: add a shadow for better readability */
+}
+
 
 .header, .sidebar, .booking-form {
   position: relative;
@@ -27,11 +55,12 @@ body {
 }
 
 .header {
-  background-color: rgb(98 86 86); /* Semi-transparent background */
+  background-color: rgb(98, 86, 86); /* Semi-transparent background */
   padding: 20px;
   text-align: left;
   font-size: 25px;
   transition: margin-left 0.3s;
+  border-radius: 10px; 
 }
 
 .openbtn {
